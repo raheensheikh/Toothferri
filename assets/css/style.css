@@ -1,0 +1,1673 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+a,
+.btn-default,
+textarea {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: #191919;
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+body {
+	overflow-x: hidden;
+    font-family: 'Jost', serif;
+
+}
+.container-fluid {
+    padding: 0 50px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.d_flexCenter{
+	display: flex;
+	align-items: center;
+}
+.d_flexStart{
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+}
+.d_flexStartBetween{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.d_flexCenterGap{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.d_flexSpacebetween{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.d_flexSpacebetweenGap{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+/*scroll bar css start*/
+.scroll::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px #409d88; 
+	border-radius: 10px;
+	background-color: #fff; 
+}
+
+.scroll::-webkit-scrollbar{
+	width: 6px;
+    border-radius: 12px;
+	background-color: #ffffff;
+}
+.scroll::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #007a5e;
+}
+
+.chat-body::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px #409d88; 
+	border-radius: 10px;
+	background-color: #fff; 
+}
+
+.chat-body::-webkit-scrollbar{
+	width: 6px;
+    border-radius: 12px;
+	background-color: #ffffff;
+}
+.chat-body::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #007a5e;
+}
+  /*scroll bar css end*/
+/*======== HEADER CSS START HERE ========*/
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.title {
+    display: flex;
+    gap: 14px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.green {
+    color: #007a5e !important;
+}
+.headerSection {
+    width: calc(100% - 300px);
+    margin: 0 0 0 auto;
+    background: #ffffff;
+    box-shadow: 0px 0px 6px 0px #4e4e4e3b;
+    padding: 25px 30px;
+    transition: all 0.3s ease-in-out;
+}
+.headerSection.active {
+    width: calc(100% - 100px);
+}
+.menuSect {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.search_userSect {
+    width: calc(100% - 300px);
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.searchField {
+    background: #F3F4F9;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+}
+.searchField input {
+    width: calc(100% - 70px);
+    height: 100%;
+    border: 0;
+    background: transparent !important;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+}
+.userSect {
+    background: #ffffff;
+    box-shadow: 0px 0px 6px 0px #4e4e4e3b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 15px;
+    height: 70px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #fff;
+    width: 230px;
+}
+.scroll.agreement {
+    height: 650px;
+    margin: 0px 18px;
+}
+.user_img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    object-fit: cover;
+    object-position: center;
+}
+.dropdown-icon img {
+    border-radius: 50%;
+}
+.userSect .green {
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 8px;
+}
+.aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    background: #007A5E;
+}
+.all_navLinks li a.active {
+    background: #fff;
+    color: #007a5e;
+}
+.aside.active {
+    width: 100px;
+}
+.aside.active .all_navLinks li a .icons{
+    display: flex !important;
+}
+.aside.active .all_navLinks li a span{
+    display: none;
+}
+.aside.active .logoSect a img {
+    max-width: 100px;
+}
+.logoSect a img {
+    max-width: 200px;
+    object-fit: cover;
+}
+.logoSect {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all_navLinks li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 65px;
+    padding-left: 25px;
+    width: 100%;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.all_navLinks li a .icons {
+    width: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+.default_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active_icons {
+    display: none;
+}
+.all_navLinks li a:hover {
+    background: #fff;
+    color: #007a5e;
+}
+.all_navLinks li a:hover {
+    background: #fff;
+    color: #007a5e;
+}
+.all_navLinks li a:hover .default_icons {
+    display: none;
+}
+.all_navLinks li a:hover .active_icons{
+    display: flex;
+}
+.all_navLinks li a.active .default_icons {
+    display: none;
+}
+.all_navLinks li a.active .active_icons{
+    display: flex;
+}
+.aside.active .aside_btn .cta {
+    width: 80px;
+}
+.aside.active .aside_btn .cta .txt {
+    display: none;
+}
+.userProfile {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.User_profiledetail ul li a {
+    height: unset;
+    color: #000 !important;
+}
+.aside_btn {
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
+.aside_btn .cta {
+    background: #fff;
+    color: #fe0000;
+    font-size: 20px;
+    display: flex;
+    width: 215px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0px 50px 50px 0px;
+}
+.User_profiledetail ul li {
+    padding: 10px 0;
+}
+
+/* ==================== Header Css End's Here ============= */
+/*======== Role Selection Starts HERE ========*/
+.cta2:hover {
+    background: #ffffff;
+    border: 1px solid #007a5e;
+    color: #007a5e !important;
+}
+.role-selection {
+    height: 58rem;
+    background-image:url('../images/banner.png');
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.role-selection .loginHeading {
+    font-size: 30px;
+    color: #fff;
+}
+.selection-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 450px;
+}
+.selection-btns .cta {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    border-radius: 8px;
+    font-size: 22px;
+    color: #008c6d;
+    transition: all 0.3s ease-in-out;
+    gap: 6px;
+}
+.red {
+    color: #f08b92 !important;
+}
+/*======== Role Selection Ends HERE ========*/
+/*======== Pre Login Starts HERE ========*/
+.signin-links {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    display: flex
+    ;justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.login_links {
+    color: #fff;
+    text-decoration: underline;
+}
+.black {
+    color: #000 !important;
+}
+.loginForm {
+    width: 500px;
+    margin: 0 auto;
+}
+/*======== Pre Login Starts HERE ========*/
+/*======== Login Ends HERE ========*/
+.logInput {
+    position: relative;
+    justify-content: flex-start !important;
+    padding: 16px;
+    font-size: 18px !important;
+    background: #fff;
+    height: 70px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    outline: none;
+    gap: 10px;
+}
+.email input {
+    border: none;
+    outline: none;
+    color: #000;
+    width: 100%;
+    background: transparent !important;
+}
+.email {
+    width: 100%;
+    text-align: start;
+}
+.absIcon {
+    border-right: 1px solid #000;
+    padding-right: 12px;
+}
+/*======== Login Ends HERE ========*/
+/*======== User Agreement Starts HERE ========*/
+.paragraph {
+    color: #fff;
+    font-size: 18px;
+    text-align: start;
+    padding: 0px 16px;
+}
+.indexSection1 {
+    margin: 0 auto;
+    padding: 25px 75px;
+    transition: 0.3s ease-in-out;
+}
+.indexSection1.active {
+    width: calc(100% - 110px);
+}
+/*======== User Agreement Ends HERE ========*/
+/*======== OTP Starts HERE ========*/
+.digit-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    gap: 16px;
+}
+.digit-group input {
+    width: 75px;
+    height: 75px;
+    padding: 0px;
+    text-align: center;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+.otp-desc {
+    color: #000;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.loginForm .item {
+    position: relative;
+    max-width: 160px;
+    margin: 0 auto;
+    margin-top: 72px;
+}
+.loginForm .item h2 {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
+    font-weight: 500;
+    color: #000000;
+    z-index: 9999;
+}
+.loginForm svg {
+    transform: rotate(-90deg);
+    border-radius: 100%;
+    background: #F1E7E3;
+}
+.loginForm .circle_animation {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: all 1s linear;
+} 
+.resendBtn {
+    font-size: 16px;
+    color: #2B2B2B;
+    text-align: center;
+    padding-top: 50px;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.resendBtn .blue {
+    font-weight: 600;
+} 
+.verification .signin-links {
+    position: unset;
+}
+/*======== OTP Ends HERE ========*/
+/*======== Create Profile Starts HERE ========*/
+.avatar-upload {
+    position: relative;
+    max-width: 180px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.create-profile .range-wrapper {
+    height: 160px;
+}
+.form-check-input:checked {
+    background-color: #007a5e;
+    border-color: #007a5e;
+}
+.form-check-input {
+    border: 1px solid rgb(0 122 94);
+}
+.certificates .logInput {
+    height: 30px;
+    padding: 0;
+}
+.logInput2 {
+    height: 70px;
+    background: #F3F4F9;
+    padding: 10px;
+    width: 100%;
+    border-radius: 12px;
+}
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+.avatar-upload .avatar-edit input + label {
+    left: 65%;
+    bottom: 2px;
+    background: #007a5e;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+}
+.avatar-upload .avatar-edit input + label i {
+	font-size: 16px;
+	color: #fff;
+}
+.avatar-upload .avatar-preview {
+    width: 180px;
+    height: 180px;
+    margin: 35px auto;
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+#imagePreview {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.create-profile {
+    align-items: flex-start;
+    padding: 50px 0px;
+}
+.create-select .cta {
+    color: #000;
+    outline: none;
+    border: none;
+    padding: 8px;
+}
+.textbox {
+    border-radius: 6px;
+    height: 125px !important;
+    outline: none;
+    border: 0;
+    resize: none;
+    padding: 16px;
+    font-size: 18px !important;
+    background: #fff;
+}
+.scroll {
+    height: 425px;
+    overflow-y: scroll;
+    padding: 5px;
+}
+.certificates {
+    flex-direction: column;
+    height: 100% !important;
+    justify-content: flex-start !important;
+    padding: 12px;
+    gap: 10px !important;
+    align-items: flex-start !important;
+}
+.add_img {
+    background: #fff;
+    border: 1px dashed #808080;
+    padding: 52px;
+}
+.range-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 18px;
+}
+.range {
+    width: 100%;
+}
+.range input{
+    width: 100%;
+}
+.price_box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.form-switch {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+}
+.form-switch input {
+    width: 40px;
+    height: 22px;
+}
+.form-switch .form-check-input {
+    background-image: url('../images/dot.png');
+    background-repeat: no-repeat !important;
+    background-color:#006956;
+    border-color: #006956;
+}
+/*======== Create Profile Ends HERE ========*/
+/*======== Avaibility Starts HERE ========*/
+.available_box {
+    justify-content: space-between !important;
+}
+.days {
+    font-size: 20px !important;
+    font-weight: 500;
+}
+.time {
+    color: #676767;
+}
+/*======== Avaibility Ends HERE ========*/
+/*======== Index Css Starts HERE ========*/
+.indexSection1 {
+    display: block;
+    width: calc(100% - 325px);
+    margin: 0px 0 0 auto;
+    padding: 20px 30px;
+}
+.small_para {
+    color: #79777e;
+    font-size: 22px;
+}
+.chat_box {
+    border-radius: 18px;
+    height: fit-content;
+    background: #fff;
+    box-shadow: 0px 0px 10px 4px #0000001f;
+    padding: 10px 15px;
+}
+.profile_details .title {
+    font-weight: 400;
+    font-size: 22px;
+}
+.profile_details li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-bottom: 1px solid #999b99;
+    text-align: center;
+}
+.profile_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-sec {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.cta2 {
+    background: #007a5e;
+    color: #fff !important;
+    font-weight: 500;
+    border-radius: 8px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    font-size: 24px;
+}
+.last {
+    border: none !important;
+}
+.name .title {
+    font-size: 25px;
+    font-weight: 400;
+}
+.terms .paragraph {
+    color: #000;
+}
+/*======== Index Css Ends HERE ========*/
+/*======== Chat Css Starts HERE ========*/
+.chat-section {
+    padding: 25px;
+}
+.form-group .input-box {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #4b4b4b;
+    height: 60px;
+    padding: 14px;
+    border-radius: 6px;
+    align-items: center;
+}
+.form-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.chat {
+    display: flex;
+    gap: 12px;
+    border-bottom: 1px solid #5e5e5e;
+    padding: 10px 0px;
+    align-items: center;
+}
+.chat-img img {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+.chat .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #565656;
+}
+.chats .scroll {
+    margin-top: 10px;
+    height: 580px;
+}
+.chat .time {
+    font-size: 15px;
+    color: #979595;
+    font-weight: 500;
+}
+.input-box img {
+    width: 22px;
+    height: 22px;
+}
+.chat-head-person {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.chat-box .chat-head {
+    border-bottom: 2px solid #b5b5b5;
+    padding-bottom: 8px;
+}
+.message-sent .para {
+    background: #ffffff;
+    border: 1px solid #edeaea;
+    height: auto;
+    width: 100%;
+    max-width: 437px;
+    border-radius: 8px;
+    padding: 5px 24px;
+}
+.msg-time {
+    font-size: 14px;
+    color: #707070;
+}
+.message-recieve {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin: 45px 0px;
+    gap: 12px;
+}
+.message-recieve .para {
+    background: #007a5e;
+    color: #fff;
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    padding: 5px 24px;
+}
+.message-recieve .msg-title {
+    display: flex;
+    justify-content: end;
+}
+.msg-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.message-recieve .msg-time {
+    position: absolute;
+    right: 6%;
+    bottom: -25px;
+}
+.inbox {
+    box-shadow: 0px 3px 0px 0px #00000014;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.inbox .title {
+    font-size: 22px;
+    font-weight: 700;
+}
+.write-box {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #a8a8a8;
+}
+.write-box .send-icon {
+    display: flex;
+    position: absolute;
+    left: 86%;
+    top: 28%;
+    font-size: 24px;
+    color: #007a5e;
+    gap: 16px;
+}
+.chat-box {
+    margin-left: 25px;
+}
+.message-sent {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin: 45px 0px;
+    gap: 12px;
+}
+.message-sent .msg-time {
+    position: absolute;
+    bottom: -25px;
+    left: 6%;
+}
+.write-box input {
+    padding: 20px;
+    background: transparent;
+    color: #000000;
+}
+.chat-body {
+    padding: 10px 20px;
+    height: 510px;
+    overflow-y: scroll;
+}
+.userdesc {
+    width: 100%;
+}
+/*======== Chat Css Ends HERE ========*/
+/*======== Earnings Css Starts HERE ========*/
+.earnings .price_box {
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: url(../images/earning-background.png);
+    height: 225px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 28px;
+}
+.earnings .cta2 {
+    background: #fff;
+    color: #000 !important;
+    font-size: 18px;
+    height: 50px;
+    width: 135px;
+}
+.price {
+    font-size: 64px;
+    font-weight: 500;
+}
+.earnings .price_box .para {
+    font-size: 22px;
+}
+.earnings .profile_info img {
+    width: 85px;
+    height: 85px;
+}
+.history_box .title {
+    font-size: 20px;
+}
+.history_box .small_para {
+    font-size: 15px;
+}
+.profile_info .green {
+    font-size: 25px;
+    font-weight: 500;
+}
+.earnings .red {
+    font-weight: 600;
+    font-size: 18px;
+}
+/*======== Earnings Css Ends HERE ========*/
+/*======== Appointments Css Starts HERE ========*/
+.appointment_table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.appointment_table .cta2 {
+    height: 45px;
+    width: 130px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.table .cta2 {
+    height: 35px;
+    width: 100px;
+    font-size: 16px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+tbody, td, tfoot, th, thead, tr {
+    border-color: #bab3b3b5;
+    text-align: center;
+}
+.table .small_para {
+    font-size: 18px;
+}
+/*======== Appointments Css Ends HERE ========*/
+/************* Call Starts Here ************/
+.videoCall {
+    background: url('../images/video.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 52rem;
+    position: relative;
+}
+.video_call_option {
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.record {
+    height: 72rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: 0 auto;
+}
+.video_call_option {
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.record .btn-group {
+    display: flex;
+    gap: 25px;
+}
+.record .btn {
+    border:none;
+    color: #000;
+    background: #fff;
+}
+.record label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+    width: 95px;
+    border-radius: 50% !important;
+    position: relative !important;
+    font-size: 26px;
+}
+.hang_up {
+    background: red ;
+}
+.video .hang_up {
+    display: flex;
+    background: red !important;
+    align-items: center;
+    border-radius: 50% !important;
+    height: 95px;
+    width: 95px;
+    justify-content: center;
+}
+.record .btn-check:checked+.btn-outline-primary{
+    background: #007a5e !important;
+    color: #fff !important;
+}
+.btn-group-vertical>.btn-check:checked+.btn, .btn-group-vertical>.btn-check:focus+.btn, .btn-group-vertical>.btn.active, .btn-group-vertical>.btn:active, .btn-group-vertical>.btn:focus, .btn-group-vertical>.btn:hover, .btn-group>.btn-check:checked+.btn, .btn-group>.btn-check:focus+.btn, .btn-group>.btn.active, .btn-group>.btn:active, .btn-group>.btn:focus, .btn-group>.btn:hover {
+    z-index: 1;
+    background: #217b5e;
+    color: #fff;
+}
+.video_caller {
+    display: flex;
+    border-radius: 20px;
+    position: absolute;
+    left: 82%;
+    top: 62%;
+}
+.video_caller img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+/************* Call Ends Here ************/
+/************* Appointment Starts Here ************/
+.nav-tabs {
+    border-bottom: none;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.appointment_tabs .nav .nav-link.active {
+    background: #007a5e;
+}
+.appointment_tabs .nav .nav-link {
+    background: #858f8c;
+    color: #fff;
+    width: 225px;
+    height: 55px;
+    border-radius: 12px;
+    font-size: 20px;
+}
+.requests .btn_sec {
+    display: flex;
+    gap: 25px;
+}
+.requests .btn_sec .cta2 {
+    width: 65px;
+    height: 65px;
+    font-size: 36px;
+    box-shadow: 0px 4px 0px 0px #b5b5b559;
+}
+.cancel {
+    background: #858f8c;
+}
+/************* Appointment Ends Here ************/
+/************* Hire Starts Here ************/
+.hire .cta2 {
+    height: 55px;
+    width: 150px;
+    font-weight: 400;
+}
+.hire .hang_up:hover {
+    background: #ffff;
+    border: 1px solid #f00;
+    color: red !important;
+}
+.hire .searchField {
+    max-width: 470px;
+    border: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+.get {
+    background: #00C497;
+}
+/************* Hire Ends Here ************/
+/************* QR Starts Here ************/
+.qr_img .title {
+    display: flex;
+    justify-content: center;
+}
+.qr_scan {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+.qr_scan .cta2 {
+    width: 100%;
+    gap: 14px;
+}
+.qr_scan .small_para {
+    font-size: 16px;
+}
+.details .profile_details li {
+    padding: 6px 0;
+}
+.details .profile_details li .small_para {
+    font-size: 18px;
+}
+.details .profile_details li .title {
+    font-size: 20px;
+}
+.details .about {
+    padding: 22px 12px;
+}
+.profile_wrapper .details_tab .nav .nav-link {
+    color: #7c7c7c !important;
+    box-shadow: none !important;
+    font-size: 22px;
+    border: none !important;
+}
+.profile_wrapper .details_tab .nav .nav-link.active {
+    border: none !important;
+    color: #007a5e !important;
+    text-decoration: underline;
+}
+.table .green {
+    font-size: 18px;
+    font-weight: 500;
+}
+.profile_edit .logInput {
+    box-shadow: 0px 0px 10px 4px #0000001f;
+    border: none;
+}
+.profile_edit .red {
+    box-shadow: 0px 0px 10px 4px #0000001f;
+}
+.profile_edit .qr_scan {
+    margin: 0 auto;
+}
+/************* QR Ends Here ************/
+/************* Update Password Starts Here ************/
+.password_section .logInput {
+    box-shadow: 1px 1px 10px 0px #0000003d;
+}
+.password_section .cta2 {
+    width: 100%;
+}
+.password_section .email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.password_section .email i {
+    color: #8b8b8b;
+    font-size: 22px;
+}
+.password_section .green {
+    font-size: 20px;
+    font-weight: 500;
+}
+.expiry_date {
+    display: flex;
+    gap: 25px;
+}
+.card_id .absIcon {
+    border-right: none;
+    padding-right: 5px;
+}
+.card_id .email {
+    display: block;
+}
+.card_id .green {
+    font-size: 16px;
+}
+/************* Update Password Ends Here ************/
+/************* Subscription Starts Here ************/
+.subscription_card {
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.08));
+    background: #fff;
+    height: 100%;
+    border-radius: 12px;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 4px #0000001f;
+}
+.subscription_card:before {
+    content: '';
+    position: absolute;
+    background: #007a5e;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    right: -50px;
+    top: -50px;
+    border-radius: 50%;
+}
+.subscription_card .title {
+    font-size: 26px;
+    font-weight: 600;
+    padding: 20px 0;
+    color: #007a5e;
+    justify-content: center;
+}
+.price_pkg {
+    width: 145px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #007a5e;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.price_pkg h5 {
+    color: #fff;
+    font-size: 30px;
+}
+.price_pkg p {
+    color: #fff;
+    font-size: 18px;
+}
+.pkg_detail li {
+    font-size: 20px;
+    color: #185C37;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Subscriptions .row {
+    width: 75%;
+}
+.subscription_card .btnSect .cta {
+    font-size: 16px;
+    width: 200px;
+}
+.pkg_detail {
+    padding: 20px 30px 0;
+}
+.subscription_card .btnSect {
+    margin-top: 28px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.Subscriptions .cta2 {
+    width: 100%;
+    height: 50px;
+    font-weight: 400;
+    font-size: 22px;
+}
+/************* Subscription Ends Here ************/
+/************* Profile Starts Here ************/
+
+.profile_wrapper .title {
+    display: block;
+}
+.profile_wrapper .qr_scan {
+    margin: 0 auto;
+}
+.duration_box {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #007a5e;
+    height: 125px;
+    border-radius: 12px;
+    align-items: center;
+}
+.time .small_para {
+    font-size: 18px;
+}
+.duration_box .time {
+    border-right: 1px solid #676767;
+    width: 100%;
+}
+.profile_wrapper .appointment_tabs .nav .nav-link {
+    background: #fff;
+    color: #007a5e;
+    box-shadow: 1px 2px 4px 1px #b6b3b385;
+}
+.profile_wrapper .appointment_tabs .nav .nav-link.active {
+    border: 1px solid #007a5e;
+}
+.certificates-img img {
+    width: 120px;
+    height: 120px;
+}
+.about {
+    border-radius: 12px;
+    text-align: start;
+    padding: 30px 22px;
+}
+.about .title {
+    font-size: 20px;
+}
+.profile_wrapper .table .small_para {
+    font-size: 20px;
+}
+.review-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px !important;
+}
+.blue_title {
+    font-size: 18px;
+    color: #0A7B89;
+    font-weight: 500;
+}
+.review-heading .title {
+    font-size: 22px !important;
+}
+.profile_wrapper .profile_info {
+    box-shadow: 0px 0px 10px 4px #0000001f;
+    padding: 12px;
+}
+.rattings .small_para {
+    text-align: end;
+}
+.qr_scan .avatar-upload {
+    margin-bottom: 0 !important;
+}
+.code_scan {
+    display: flex;
+    justify-content: flex-end;
+}
+.phone {
+    position: absolute;
+    background: #007a5e;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 30px;
+    top: 20%;
+    border-radius: 12px;
+}
+.qr_scan .avatar-preview {
+    margin: 0 auto;
+}
+.edit_profile {
+    left: 54%;
+    bottom: 0px;
+    background: #007a5e;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+}
+.profile_uploaded {
+    position: relative;
+}
+/************* Profile Ends Here ************/
+/************** Popup Css Start Here ********************/
+.btn-close {
+    background: url(../images/close.png) no-repeat;
+}
+.modal-header {
+    border-bottom: none;
+    height: 35px;
+}
+.modal-title {
+    width: 100%;
+    text-align: center !important;
+    font-size: 24px;
+}
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 8px;
+    border: 0;
+}
+.lead .form-check-input:checked {
+    background-color: #007a5e;
+    border-color: #007a5e;
+}
+.lead .form-check {
+    padding-left: 0;
+}
+.form-check-input[type=radio] {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #007a5e;
+}
+.form-check-input:checked[type=radio] {
+    background-image: url(../images/check.png);
+    background-size: unset;
+}
+.lead .name .title {
+    font-size: 20px;
+}
+.lead .name .small_para {
+    font-size: 15px;
+}
+.lead .profile_info {
+    box-shadow: 0px 0px 8px 1px #0000001f;
+    padding: 0 8px;
+    border-radius: 12px;
+}
+.modal .cta2 {
+    width: 100%;
+}
+.note .small_para {
+    font-size: 18px;
+}
+.approval_submit .title {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+.time_sec {
+    display: flex;
+    gap: 10px;
+}
+.time_sec .logInput {
+    display: block;
+}
+.time_sec .title {
+    font-size: 18px;
+    justify-content: flex-start;
+}
+.time_sec input {
+    border: none;
+    height: 60px;
+    box-shadow: 0px 0px 0px 1px #aea7a745;
+    border-radius: 8px;
+    background: #F5F5F5 !important;
+}
+.lead .searchField img {
+    width: 24px;
+}
+.clip_icon {
+    height: 40px;
+    width: 40px;
+    right: 5px;
+    border-radius: 50%;
+    top: 18px;
+}
+.availability .time_sec {
+    display: block;
+}
+.availability .time_sec .logInput {
+    padding: 0;
+}
+.availability .form-switch {
+    border: none;
+    height: 60px;
+    box-shadow: 0px 0px 0px 1px #aea7a745;
+    border-radius: 8px;
+    background: #F5F5F5;
+}
+.availability .form-switch input {
+    height: 22px;
+}
+.notification .modal-header {
+    background: #ECECEC;
+    height: 70px;
+    border: 0;
+}
+.switch {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.notification .modal-title {
+    text-align: start !important;
+    font-weight: 600;
+}
+.notification  .small_para {
+    font-size: 14px;
+    font-weight: 500;
+}
+.notification  .green {
+    font-size: 16px;
+    font-weight: 600;
+}
+.notification  .name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.text {
+    width: 100%;
+}
+.notification .modal-body {
+    padding: 5px;
+}
+.chat-title .small_para {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.notification .scroll {
+    height: 600px;
+}
+.notification .profile_info {
+    box-shadow: 0px 3px 4px 0px #b1b1b142;
+}
+.session .about .small_para {
+    font-size: 14px;
+}
+.session .about {
+    padding: 8px 16px;
+}
+.description {
+    height: 145px;
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    background: #F3F4F9;
+    padding: 12px;
+    border-radius: 12px;
+}
+.search  .searchField {
+    padding: 0 12px;
+}
+.search .title {
+    font-size: 18px;
+    margin: 16px 0;
+}
+.search  .form-check {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    align-items: center;
+    padding: 9px;
+    border-radius: 8px;
+    background: #f3f4f9;
+}
+.search  .logInput {
+    padding: 0;
+}
+.search .time_sec .form-check-input {
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border: 1px solid #007a5e !important;
+}
+.search .time_sec .form-check-input:checked {
+    background-color: #007a5e !important;
+    background-image: ;
+}
+/************** Popup Css End Here ********************/
+.addProperty_image {
+    position: relative;
+    width: 100%;
+}
+.upload_box {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 10px;
+    top: 10px;
+    border: 1px dashed #707070;
+}
+.addProperty_image .form-control[type=file]:not(:disabled):not([readonly]) {
+    cursor: pointer;
+    opacity: 0;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid #707070;
+}
+.img-thumbs {
+    margin: 0px 0 0;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.wrapper-thumb{
+    position: relative;
+}
+.wrapper-thumb img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #007a5e;
+    width: 20px;
+    color: #fff;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#slider-container {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #range-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    outline: none;
+    transition: background 0.2s;
+}
+  #circle {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007a5e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+  }
+/* Style for the thumb (handle) of the range slider */
+input[type="range"]::-webkit-slider-thumb {
+-webkit-appearance: none;
+width: 20px;
+height: 20px;
+background: #007a5e; /* Handle color */
+border-radius: 50%;
+border: 2px solid #d3d3d3; /* Border color */
+margin-top: -5px;
+cursor: pointer;
+}
+
+/* Hover effect on the thumb */
+input[type="range"]::-webkit-slider-thumb:hover {
+background: #007a5e; /* Handle color on hover */
+}

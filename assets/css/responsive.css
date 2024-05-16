@@ -1,0 +1,602 @@
+@media only screen and (max-width:1440px){
+    .signin-links {
+        bottom: -70px;
+    }
+    .Subscriptions .row {
+        width: 100%;
+    }
+  
+}
+@media only screen and (max-width:1366px){
+    .aside {
+        width: 245px;
+    }
+    .headerSection {
+        width: calc(100% - 245px);
+    }
+    .indexSection1 {
+        width: calc(100% - 240px);
+    }
+    .write-box .send-icon {
+        position: absolute;
+        left: 92%;
+    }
+    .logInput img {
+        max-width: 50px;
+    }
+    .certificates img {
+        max-width: 100px;
+    }
+}
+@media only screen and (max-width:1280px){
+    .cta2 {
+        height: 60px;
+        width: 130px;
+        font-size: 20px;
+    }
+    .main-profile {
+        width: 95px;
+        height: 95px;
+    }
+    .search_userSect {
+        width: calc(100% - 230px);
+    }
+    .earnings .profile_info img {
+        width: 80px;
+        height: 80px;
+    }
+    .headerSection {
+        width: calc(100% - 250px);
+    }
+    .video_caller {
+        left: 82%;
+    }
+    .subscription_card {
+        padding: 40px 6px;
+    }
+    .pkg_detail li {
+        font-size: 18px;
+    }
+    .subscription_card:before {
+        right: -60px;
+        top: -60px;
+    }
+    .Subscriptions .cta2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .chat_box {
+        padding: 10px 8px;
+    }
+    .title {
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 1140px){
+    .aside {
+        width: 210px;
+    }
+    .headerSection {
+        width: calc(100% - 212px);
+    }
+    .indexSection1 {
+        width: calc(100% - 210px);
+    }
+    .img-sec {
+        gap: 2px;
+    }
+    .main-profile {
+        width: 80px;
+        height: 80px;
+    }
+    .cta2 {
+        height: 50px;
+        width: 115px;
+    }
+    .name .title {
+        font-size: 20px;
+    }
+    .profile_info .green {
+        font-size: 18px;
+    }
+    .small_para {
+        font-size: 18px;
+    }
+    .profile_details .title {
+        font-size: 20px;
+    }
+    .menuSect {
+        gap: 10px;
+    }
+    .title {
+        gap: 8px;
+    }
+    .search_userSect {
+        width: calc(100% - 150px);
+    }
+    .pkg_detail {
+        padding: 20px 12px 0;
+    }
+    .subscription_card .title {
+        font-size: 22px;
+    }
+    .Subscriptions .cta2 {
+        font-size: 18px;
+    }
+
+}
+@media only screen and (max-width: 1024px){
+    .icons {
+        display: flex !important;
+    }
+    .all_navLinks li a span {
+        display: none;
+    }
+    .logoSect a img {
+        max-width: 80px;
+    }
+    .aside {
+        width: 80px;
+    }
+    .headerSection {
+        width: calc(100% - 84px);
+    }
+    .indexSection1 {
+        width: calc(100% - 80px);
+    }
+    .record label {
+        height: 80px;
+        width: 80px;
+    }
+    .video .hang_up {
+        height: 80px;
+        width: 80px;
+    }
+}
+@media only screen and (max-width:991px){
+    .menuSect {
+        gap: 12px;
+    }
+    .search_userSect {
+        width: calc(100% - 185px);
+    }
+    .userProfile {
+        gap: 12px;
+    }
+    .userSect {
+        width: 205px;
+    }
+    .profile_wrapper .appointment_tabs .nav .nav-link {
+        width: 210px;
+    }
+    .chat_box {
+        padding: 10px 14px;
+    }
+    .video_caller {
+        left: 0;
+        top: 0;
+    }
+}
+@media only screen and (max-width: 910px){
+    .headerSection {
+        padding: 20px 12px;
+    }
+    .searchField input {
+        width: calc(100% - 45px);
+    }
+    .chat-section {
+        padding: 14px;
+    }
+    .userSect {
+        width: 185px;
+    }
+    .user_img img {
+        width: 38px;
+        height: 38px;
+    }
+    .userSect .green {
+        font-size: 16px;
+    }
+    .profile_wrapper .chat_box {
+        width: 530px;
+        margin: 0 auto;
+    }
+    .profile_wrapper .qr_scan .cta2 {
+        width: 530px;
+        margin: 0 auto;
+    }
+    .phone {
+        width: 50px;
+        height: 50px;
+    }
+    .profile_wrapper .nav {
+        display: flex;
+        justify-content: center;
+    }
+    .duration_box {
+        margin: 0 auto;
+        width: 530px;
+    }
+    .profile_wrapper .profile_info {
+        width: 530px;
+        margin: 0 auto;
+    }
+    .review-heading {
+        margin: 0 auto;
+        width: 530px;
+    }
+    .profile img {
+        width: 165px;
+        height: 165px;
+    }
+    .subscription_card:before {
+        right: -70px;
+        top: -90px;
+    }
+    .pkg_detail li {
+        font-size: 15px;
+    }
+    .subscription_card .btnSect {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 767px){
+    .loginSect_logo img {
+        max-width: 425px;
+    }
+    .digit-group input {
+        width: 70px;
+        height: 70px;
+    }
+    .cta2 {
+        height: 55px;
+        width: 145px;
+    }
+    .title {
+        gap: 6px;
+        font-size: 26px;
+    }
+    .chat_box {
+        margin-bottom: 12px;
+    }
+    .chat-body {
+        padding: 10px 6px;
+    }
+    .appointment_tabs .nav .nav-link {
+        width: 200px;
+    }
+    .hire .cta2 {
+        height: 50px;
+        width: 130px;
+    }
+    .requests .btn_sec .cta2 {
+        width: 55px;
+        height: 55px;
+    }
+    .headerSection .title {
+        display: none;
+    }
+    .userSect .green {
+        display: none;
+    }
+    .userSect {
+        width: 80px;
+    }
+    .search_userSect {
+        width: calc(100% - 45px);
+    }
+    .searchField {
+        height: 60px;
+    }
+    .headerSection {
+        padding: 12px 12px;
+    }
+    .qr_scan {
+        max-width: 100%;
+    }
+    .chat_box {
+        padding: 10px 20px;
+    }
+    .profile_wrapper .chat_box {
+        width: 460px;
+    }
+    .profile_wrapper .qr_scan .cta2 {
+        width: 460px;
+    }
+    .phone {
+        right: 15px;
+        top: 16%;
+    }
+    .avatar-upload .avatar-preview {
+        width: 165px;
+        height: 165px;
+    }
+    .duration_box {
+        width: 460px;
+    }
+    .profile_wrapper .profile_info {
+        width: 460px;
+    }
+    .review-heading {
+        width: 460px;
+    }
+    .password_section .cta2 {
+        height: 65px !important;
+    }
+    .content-section {
+        padding: 15px 8px;
+    }
+    .time {
+        font-size: 16px;
+    }
+    .videoCall {
+        height: 36rem;
+    }
+    .video_caller img {
+        width: 125px;
+    }
+    .record {
+        height: 40rem;
+    }
+    .subscription_card {
+        width: 100%;
+        max-width: 475px;
+    }
+    .pkg_detail li {
+        font-size: 18px;
+    }
+    .txt {
+        display: none;
+    }
+    .subscription_card .btnSect {
+        flex-direction: row;
+    }
+    .profile_wrapper .appointment_tabs .nav .nav-link {
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .profile_wrapper .chat_box {
+        width: 395px;
+    }
+    .loginForm {
+        width: 100%;
+    }
+    .days {
+        font-size: 16px !important;
+    }
+    .profile_wrapper .qr_scan .cta2 {
+        width: 395px;
+    }
+    .loginSect_logo img {
+        max-width: 350px;
+    }
+    .verification .selection-btns .cta {
+        width: 100% !important;
+    }
+    .verification {
+        width: 100%;
+    }
+    .headerSection {
+        width:100%;
+    }
+    .aside {
+        width: 70px;
+    }
+    .indexSection1 {
+        width:100%;
+    }
+    .main-profile {
+        width: 70px;
+        height: 70px;
+    }
+    .cta2 {
+        height: 50px;
+        width: 125px;
+    }
+    .logoSect a img {
+        max-width: 70px;
+    }
+    .messages img {
+        max-width: 42px;
+    }
+    .write-box .send-icon {
+        left: 88%;
+    }
+    .appointment_tabs .nav .nav-link {
+        width: 150px;
+    }
+    .hire .cta2 {
+        height: 45px;
+        width: 115px;
+    }
+    .requests .btn_sec {
+        gap: 6px;
+    }
+    .requests .btn_sec .cta2 {
+        width: 50px;
+        height: 50px;
+    }
+    .name img {
+        max-width: 16px;
+    }
+    .chat .title {
+        font-size: 16px;
+    }
+    .earnings .profile_info img {
+        width: 70px;
+        height: 70px;
+    }
+    .qr_img img {
+        max-width: 185px;
+    }
+    .aside {
+        width: 100px;
+        left: -30%;
+    }
+    .aside.active {
+        width: 100px;
+        left: 0%;
+        z-index: 1;
+    }
+    .indexSection1 {
+        padding: 20px 16px;
+    }
+    .profile_wrapper .appointment_tabs .nav .nav-link {
+        width: 185px;
+        font-size: 20px;
+    }
+    .duration_box {
+        width: 380px;
+    }
+    .duration_box .green {
+        font-size: 16px;
+    }
+    .time .small_para {
+        font-size: 15px;
+    }
+    .profile_wrapper .profile_info {
+        width: 400px;
+    }
+    .review-heading {
+        width: 400px;
+    }
+    .profile_info img {
+        max-width: 80px;
+    }
+    .selection-btns {
+        width: 400px;
+    }
+    .digit-group {
+        gap: 10px;
+        justify-content: center !important;
+    }
+    .digit-group input {
+        width: 50px;
+        height: 50px;
+    }
+    .record label {
+        height: 60px;
+        width: 60px;
+    }
+    .video .hang_up {
+        height: 60px;
+        width: 60px;
+    }
+    .hang_up img {
+        max-width: 40px;
+    }
+    .time {
+        font-size: 16px;
+    }
+    .appointment_table .title {
+        font-size: 18px;
+    }
+    .certificates-img img {
+        width: 95px;
+        height: 95px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .loginForm {
+        width: 350px;
+    }
+    .loginForm .selection-btns .cta {
+        height: 60px;
+    }
+    .chat_box .cta2 {
+         height: 45px;
+        width: 105px;
+        font-size: 16px;
+    }
+    .name .title {
+        font-size: 18px;
+    }
+    .small_para {
+        font-size: 16px;
+    }
+    .profile_info .green {
+        font-size: 16px;
+    }
+    .main-profile {
+        width: 60px;
+        height: 60px;
+    }
+    .appointment_tabs .nav .nav-link {
+        width: 130px;
+        font-size: 18px;
+    }
+    .hire .cta2 {
+        width: 100px;
+    }
+    .requests .btn_sec {
+        gap: 8px;
+    }
+    .requests .btn_sec .cta2 {
+        width: 45px;
+        height: 45px;
+    }
+    .name img {
+        max-width: 12px;
+    }
+    .price {
+        font-size: 60px;
+    }
+    .logInput img {
+        max-width: 35px;
+    }
+    .loginForm .logInput {
+        height: 60px;
+    }
+    .chat {
+        gap: 6px;
+    }
+    .profile_wrapper .chat_box {
+        width: 350px;
+    }
+    .profile_wrapper .qr_scan .cta2 {
+        width: 350px;
+    }
+    .profile_wrapper .appointment_tabs .nav .nav-link {
+        width: 160px;
+        font-size: 16px;
+    }
+    .avatar-upload .avatar-preview {
+        width: 150px;
+        height: 150px;
+    }
+    .duration_box {
+        width: 340px;
+    }
+    .profile_wrapper .profile_info {
+        width: 340px;
+    }
+    .time .small_para {
+        font-size: 14px;
+    }
+    .scroll.agreement {
+        margin: 0px 6px;
+    }
+    .content-section .selection-btns .cta {
+        width: 345px;
+    }
+    .selection-btns {
+        width: 345px;
+    }
+    .digit-group {
+        justify-content: flex-start;
+    }
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+    .pkg_detail li {
+        font-size: 16px;
+    }
+    .Subscriptions .cta2 {
+        font-size: 16px;
+    }
+}
